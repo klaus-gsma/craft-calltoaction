@@ -1,0 +1,41 @@
+{
+    "name": "dawsonandrews/craft-calltoaction",
+    "description": "A reusable, configurable call to action field",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "calltoaction"
+    ],
+    "support": {
+        "docs": "https://github.com/dawson-andrews/craft-calltoaction/blob/master/README.md",
+        "issues": "https://github.com/dawson-andrews/craft-calltoaction/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dawson Andrews",
+            "homepage": "https://dawsonandrews.com/"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "dawsonandrews\\calltoaction\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Call to Action",
+        "handle": "craft-calltoaction",
+        "developer": "Dawson Andrews",
+        "developerUrl": "https://dawsonandrews.com/",
+        "documentationUrl": "https://github.com/dawson-andrews/craft-calltoaction/blob/master/README.md",
+        "changelogUrl": "https://raw.githubusercontent.com/dawson-andrews/craft-calltoaction/master/CHANGELOG.md",
+        "class": "dawsonandrews\\calltoaction\\CallToAction"
+    }
+}

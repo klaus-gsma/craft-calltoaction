@@ -1,0 +1,32 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * callToAction plugin for Craft CMS 3.x
+ *
+ * CallToAction Field Input
+ *
+ * @author    Dawson Andrews
+ * @copyright Copyright (c) 2020 Dawson Andrews
+ * @link      https://dawsonandrews.com/
+ * @package   CallToAction
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{{ forms.textField({
+    label: 'Text',
+    instructions: 'Call to action button text',
+    id: 'text',
+    name: name ~ '[text]',
+    value: value.text})
+}}
+
+{{ forms.textField({
+    label: 'URL',
+    instructions: 'Call to action path or URL',
+    id: 'url',
+    name: name ~ '[url]',
+    value: value.url})
+}}

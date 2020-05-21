@@ -1,0 +1,27 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * callToAction plugin for Craft CMS
+ *
+ * CallToAction Field Settings
+ *
+ * @author    Dawson Andrews
+ * @copyright Copyright (c) 2020 Dawson Andrews
+ * @link      https://dawsonandrews.com/
+ * @package   CallToAction
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{{ forms.radioGroup({
+    label: 'Button type',
+    id: 'type',
+    name: 'type',
+    options: {
+        primary: 'Primary',
+        secondary: 'Secondary',
+    },
+    value: field['type']})
+}}
