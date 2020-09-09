@@ -59,7 +59,7 @@ class CallToAction extends Field
 
     public function getContentColumnType(): string
     {
-        return Schema::TYPE_JSON;
+        return Schema::TYPE_TEXT;
     }
 
     public function getSettingsHtml()
